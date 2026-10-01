@@ -7,6 +7,10 @@ category of tool as [CUPP](https://github.com/Mebus/cupp) and
 built for **authorized penetration testing, auditing your own accounts, and
 password-awareness education**.
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/Yescrypt/Persona)](https://goreportcard.com/report/github.com/Yescrypt/Persona)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Go Version](https://img.shields.io/github/go-mod/go-version/Yescrypt/Persona)](https://golang.org)
+
 It ships with an **Uzbek module** that understands local spelling habits
 (`oʻ/gʻ`, Latin↔Cyrillic) and common local password patterns.
 
