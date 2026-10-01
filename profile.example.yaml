@@ -1,0 +1,38 @@
+# Example Persona profile. Copy to profile.yaml and fill in what you know.
+# Every field is optional — leave out anything you don't have.
+# Run with: persona --config profile.yaml
+
+name: Ali
+surname: Valiyev
+father_name: Akmal
+nicknames:
+  - boss
+  - aliboy
+birth_day: "14"
+birth_month: "03"
+birth_year: "1999"
+usernames:
+  - ali_v
+  - aliv99
+lucky_number: "7"
+phones:
+  - "998901234567"
+
+spouse_name: Dilnoza
+spouse_year: "2000"
+children:
+  - name: Said
+    year: "2022"
+pet_name: Rex
+important_date: "2021-06-15"
+
+city: Toshkent
+school: IT House
+workplace: Acme
+
+football_club: Paxtakor
+motto: omadyor
+brand: Cobalt
+car_plate: "01A777BC"
+color: qora
+religious_words: []

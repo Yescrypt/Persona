@@ -1,0 +1,12 @@
+# Build artifacts
+/persona
+/persona.exe
+/dist/
+
+# Generated output
+wordlist.txt
+usernames.txt
+
+# Local profiles (may contain personal data — do not commit)
+*.local.yaml
+profile.yaml

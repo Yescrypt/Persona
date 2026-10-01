@@ -1,0 +1,44 @@
+version: 2
+
+project_name: persona
+
+before:
+  hooks:
+    - go mod tidy
+
+builds:
+  - id: persona
+    main: ./cmd/persona
+    binary: persona
+    env:
+      - CGO_ENABLED=0
+    ldflags:
+      - -s -w -X main.version={{.Version}}
+    goos:
+      - linux
+      - windows
+    goarch:
+      - amd64
+      - arm64
+
+archives:
+  - id: persona
+    # Produces persona_linux_amd64.tar.gz / persona_windows_amd64.zip etc.
+    # — matches install.sh and install.ps1.
+    name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}"
+    formats: [tar.gz]
+    format_overrides:
+      - goos: windows
+        formats: [zip]
+    files:
+      - README.md
+      - LICENSE
+
+checksum:
+  name_template: "checksums.txt"
+
+release:
+  draft: false
+
+changelog:
+  use: github
